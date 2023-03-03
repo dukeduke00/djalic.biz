@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Manrope", sans-serif;
+}
+
+.djalic {
+	height: 85vh;
+}
+
+.djalic h1 {
+	font-size: 4rem;
+}
+
+.horizontalLine {
+	height: 50px;
+}
+
+.farmaKlaonice {
+	display: flex;
+
+	height: 50vh;
+}
+
+.farma {
+	background-color: rgb(157, 157, 255);
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6rem;
+}
+
+.frma:hover {
+	background-color: rgb(139, 139, 139);
+}
+
+.klaonice {
+	background-color: rgb(177, 150, 118);
+	color: white;
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6rem;
+}
+
+.klaonice:hover {
+	background-color: rgb(153, 60, 117);
+}
+
+.mesnica {
+	background-color: rgb(250, 27, 94);
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6rem;
+}
+
+.mesnica:hover {
+	background-color: rgba(253, 35, 181, 0.514);
+}
+
+.restoran {
+	background-color: rgb(83, 202, 99);
+	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6rem;
+}
+
+.restoran:hover {
+	background-color: rgba(0, 61, 8, 0.466);
+}
+
+.hrFarma {
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 300px;
+}
+
+.hrKlaonice {
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 400px;
+}
+
+.hrMesnica {
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 400px;
+}
+
+.hrRestoran {
+	width: 60%;
+	height: 4px;
+	background-color: rgb(255, 255, 255);
+	transition: 2s ease;
+}
+
+.hrRestoran:hover {
+	width: 33%;
+}
+
+.flipFarma:hover .flipFarmaInner {
+	transform: rotateY(180deg);
+}
+
+.flipFarmaInner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.farmaFront,
+.farmaBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.farmaFront {
+	background-color: #2980b9;
+	color: rgb(255, 255, 255);
+}
+
+.farmaBack {
+	background-color: #64882b;
+	color: white;
+	transform: rotateY(180deg);
+}
+
+.info {
+	width: 100%;
+	height: 300px;
+	background-color: #0e2b38;
+}
+
+.socialPhoto {
+	width: 50px;
+}
+
+.phonePhoto {
+	width: 50px;
+}
+
+.messageIcon {
+	width: 60px;
+}
+
+@media screen and (max-width: 992px) {
+	.flipFarma {
+		height: 600px;
+	}
+
+	.djalic {
+		height: 600px;
+	}
+
+	.klaonice {
+		height: 600px;
+	}
+
+	.restoran {
+		height: 600px;
+	}
+
+	.mesnica {
+		height: 600px;
+	}
+}
